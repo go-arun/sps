@@ -1,22 +1,27 @@
 #include <stdio.h>
-
 void main(){
+int total_rows,i,j,k,s;
+int space_maintainer;
+printf("Enter number of rows for this special pattern :");
+scanf("%d",&total_rows);
+space_maintainer = total_rows;
 
-    char word1_array[20]={0};
-    char word2_array[20]={0};
-    int i=0;
-
-    printf ("Provide two words to comapre \nEnter First word :");
-    scanf("%s",&word1_array);
-    printf ("Enter Second word :");
-    scanf("%s",&word2_array);
-
-    while(word1_array[i] == word2_array[i++]){
-        if (i == 20){//Reached end !! Means words are maching!!
-            printf(" Those two words are SAME\n");
-            break;
+for (i=0;i<total_rows;i++){
+        j= i+1 ;// total elements in particular row
+        k=1;
+        for (s = space_maintainer--;s >0;s--){//maintain starting postion 
+            printf(" ");
         }
+        while (j>0)
+        {
+            if (j-1 == 0){//Is last element in this row , then print 1
+                k=1;
+            }
+            printf("%d ",k++);
+            j--;
+        }
+        printf("\n");//new line
+        
     }
-    if (i<20){printf("Those two words are not SAME\n");}
-    printf("---------------------------\n");
+    
 }

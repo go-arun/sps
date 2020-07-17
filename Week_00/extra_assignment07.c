@@ -20,7 +20,7 @@ int main()
    int i=0;j=0; //to walk through keyword and sentense.
    while (sentance_length > 0)
    {
-      if("%d",str_sentense[i] == 32){word_count++;}
+      if("%d",str_sentense[i] == 32){word_count++;} // 32 is ASCII value of 'sapce key , so one space is calcualted as one word 
       if(search_word[j] == str_sentense[i++]){ // First letter mached , comapre remaining chars too
          j++; // okay check next letter
          consecutive_mach++;

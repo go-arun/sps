@@ -1,6 +1,6 @@
 <!-- gs -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,8 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <section style="position: fixed;width: 100%; z-index: 1;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info" >
             <a class="navbar-brand ml-5" href="#">Arunkumar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -32,32 +33,58 @@
               </ul>
             </div>
           </nav>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 "><!--profilePic -->
-              <img  style="float: left width: 400px;" class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4E03AQFIl2Nyk5oc2Q/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=xARDhmGWcdl9qcFJ3raiS9PbaNMCQTzUKzVq16lZ93k" alt="">
-          </div>
+        </section>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-4 "><!--profilePic -->
+              <img  style="width: 500px;" class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4E03AQFIl2Nyk5oc2Q/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=xARDhmGWcdl9qcFJ3raiS9PbaNMCQTzUKzVq16lZ93k" alt="">
+              <img src="https://i.imgur.com/ygqOvzc.png" alt="" style="position:relative;">
+            </div>
          
-          <div class="container"> <!-- div for para , right side pic-->
-            <i class='fab fa-linux fa-2x' style='font-size:42px;float: left;'></i><h3 style="font-family: monospace; width: 232px;float: left;">Linux enthusiast</h3>
-            <i  class="fa fa-desktop fa-2x" aria-hidden="true" style="float:left;"></i>
-            <h3 style="font-family: monospace;float: left; width: 300px;"> System Administration </h3>
-            <i  class="fa fa-desktop fa-2x" aria-hidden="true" style="float:left;"></i>
-            <h3 style="font-family: monospace;"> DevOps & Go/Golang Backend developer</h3><br>
-          </div>
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 "><!--Linux-->
+              <i style="float: left;" class='fab fa-linux fa-2x' style='font-size:42px;'></i>
+              <h3 style="font-family: monospace; width: 232px;">Linux enthusiast</h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 "> <!--Admmin-->
+              <i style="float:left;" class='fa fa-desktop fa-2x' ></i>
+              <h3 style="font-family: monospace; width: 300px;"> System Administrator </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 "><!--Go & DevOps-->
+              <i style="float:left;" class='fa fa-desktop fa-2x'  ></i>
+              <h3 style="font-family: monospace;"> DevOps & Go Backend developer</h3>
+            </div>
+
           <div class="row bg-secondary">
             <a id="experience" class="nav-link text-white" href="#">Experience</a>
-            <p style="font-family: cursive;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p style="font-family: cursive; padding-left: 30px;padding-right: 15px;">Systems administrator with experience in operations across Unix, Linux, Windows platforms. Effectively plan, install, configure and optimize IT infrastructures to achieve high availability and performance. Ability to research and deliver solutions(Few of them : <a href="https://pi-hole.net/">Pi-hole</a>-A black hole for Internet advertisements,<a href="https://www.freenas.org/">FreeNAS</a>-Network-attached storage OS based on FreeBSD,<a href="https://www.clearos.com/">clearOS</a>
+              -Linux based network gateway and network server) for systems/network optimization.</p> 
+            <!-- <p style="font-family: cursive; padding-left: 30px;">Systems administrator with experience in operations across Unix, Linux, Windows platforms. Effectively plan, install, configure and optimize IT infrastructures to[a href=”http://www.codecademy.com/"]WORD[/a] achieve high availability and performance.</p> -->
 
           </div>
-          <div class="row bg-dark">
-            <a id="hoby" class="nav-link text-white" href="#">Hobbies</a>
-            <p style="font-family: cursive;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <div class="row bg-success">
+            <a style="width: 100%;" id="hoby" class="nav-link text-white" href="#">Hobbies</a>
+            <!-- <p style="font-family: cursive;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p> -->
+            <p style="font-family: cursive; padding-left: 30px;padding-right: 15px;"> Amature Radio Operations , Reading & Waching Movies </a>
+
+          </div>
+          <div class="row bg-secondary">
             
-
-          </div>
-          <div class="row bg-info">
             <a id="contact" class="nav-link text-white" href="#">Contact</a>
-            <p style="font-family: cursive;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
+            <div style="margin-left: 40%";><!--div for align center -->
+            <a style="padding-right: 6px;" href="https://www.linkedin.com/in/ready2go/" target="-blank">
+              <img class="rounded-circle"  src="images/link.png" style="width: 35px;" alt="">
+            </a>              
+            <a style="padding-right: 6px;" href="http://facebook.com/hope2see" target="-blank">
+              <img class="rounded-circle"  src="images/fb.jpg" style="width: 35px;" alt="">
+            </a>
+    
+            <a style="padding-right: 6px;" href="https://www.instagram.com/arunkumar_chellappan/" target="-blank">
+              <img class="rounded-circle"  src="images/insta.png" style="width: 35px;" alt="">
+            </a>     
+            <a href="https://twitter.com/kumarcok" target="-blank">
+              <img class="rounded-circle"  src="images/twitt.png" style="width: 35px;" alt="">
+            </a>                             
+          </div>
           </div>
 
           </div>

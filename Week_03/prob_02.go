@@ -10,4 +10,5 @@ func main()  {
 	fmt.Println("Input a Second Number:")
 	fmt.Scanln(&usrInp2)
 	fmt.Println("Sum is :",float32(usrInp1)+usrInp2)
+	
 }
